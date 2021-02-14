@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+<section class="profile"> 
+    <div class="top">
+        <img id="propic" src= "{{ url_for('static', filename='jahrel.jpeg') }}" width= 100px height=100px>
+        <h2>Jahrel Mckenzie</h2>
+        <ul> 
+            <li>@jahr3lm </li>
+            <li>Kingston, Jamaiaca</li>
+            <li> {{ date }}</li>
+        </ul>
+    </div>
+
+    <div class="bottom">
+        <section class="bio">
+            <p>I am nineteen years old. I am currently in my second year pursuing a software engineering degre. In my free time I like to play games and research investments
+            </p>
+        </section>
+
+        <ul class="acc_numbers">
+            <li class="info">
+                <p class="amount">1</p>
+                <p class="label">Posts</p>
+            </li>
+            <li class="info">
+                <p class="amount">582</p>
+                <p class="label">Following</p>
+            </li>
+            <li class="info">
+                <p class="amount">667</p>
+                <p class="label">Followers</p>
+            </li>
+        </ul>
+
+        <button type="button"> Follow </button>
+    </div>
+    
+
+</section>
+{% endblock %} 
